@@ -2,6 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import homeComponent from '../page/home/index';
 
+const originalPush = Router.prototype.push
+Router.prototype.push = function push (location) {
+  return originalPush.call(this, location).catch(err => err)
+}
 
 Vue.use(Router)
 
@@ -22,6 +26,10 @@ const routes = [{
 			path: '/home/tab2',
 			name: 'tab2',
 			component: () => import('../page/tab2'),
+		}, {
+			path: '/home/tab3',
+			name: 'tab3',
+			component: () => import('../page/tab3'),
 		}]
 	}
 ]
