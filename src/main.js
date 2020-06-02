@@ -5,10 +5,14 @@ import App from './App'
 import router from './router'
 
 Vue.config.productionTip = false
+//引入elementui框架
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 
 Vue.use(ElementUI);
+//引入v-charts图表
+import VCharts from 'v-charts'
+Vue.use(VCharts)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

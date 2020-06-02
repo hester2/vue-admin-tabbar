@@ -55,7 +55,7 @@
 						<el-col :span="4">
 							<el-dropdown>
 								<i class="el-icon-setting" style="margin-right: 15px"></i>
-								<el-dropdown-menu slot="dropdown">
+								<el-dropdown-menu slot="dropdown" style="top: 40px !important;">
 									<el-dropdown-item>查看</el-dropdown-item>
 									<el-dropdown-item>新增</el-dropdown-item>
 									<el-dropdown-item>删除</el-dropdown-item>
@@ -102,13 +102,8 @@
 
 		.el-header {
 			background-color: #E4EAF1;
-			color: #333;
-			line-height: 200px;
 		}
 
-		.el-aside {
-			color: #333;
-		}
 
 		.el-submenu__title {
 			display: flex;
